@@ -1,3 +1,5 @@
 # funcubing
 
-simple fubcubing client
+Simple fubcubing client
+
+website: https://funcubing.org/
