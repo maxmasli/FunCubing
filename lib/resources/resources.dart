@@ -1,1 +1,0 @@
-part 'assets.dart';

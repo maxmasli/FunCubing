@@ -1,0 +1,1 @@
+export 'competitor_details_page.dart';
