@@ -49,8 +49,8 @@ class CompetitionBloc extends Bloc<CompetitionEvent, CompetitionState> {
 
     final sortedList = loadedState.competitionsList
         .where((element) =>
-            element.name.toLowerCase().contains(query) ||
-            (element.city != null && element.city!.toLowerCase().contains(query)))
+            element.name.toLowerCase().contains(query.toLowerCase()) ||
+            (element.city != null && element.city!.toLowerCase().contains(query.toLowerCase())))
         .toList();
     emit(loadedState.copyWith(sortedCompetitionList: sortedList));
   }
